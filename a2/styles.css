@@ -31,7 +31,7 @@ section {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 form {
@@ -78,4 +78,126 @@ footer {
     padding: 1rem;
     background-color: #f1f1f1;
     margin-top: 2rem;
+}
+
+.auth-switch {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.switch-btn {
+    background: none;
+    border: none;
+    color: #4CAF50;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.switch-btn:hover {
+    background: none;
+    color: #45a049;
+}
+
+#login-form h3, #register-form h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#login-form, #register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+#login-form input, #register-form input {
+    padding: 8px;
+    margin: 5px 0;
+}
+
+#login-form button, #register-form button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#login-form button:hover, #register-form button:hover {
+    background-color: #45a049;
+}
+
+.password-requirements {
+    font-size: 0.8em;
+    color: #666;
+    margin: 5px 0;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+}
+
+.password-requirements ul {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+.password-requirements li {
+    margin: 2px 0;
+}
+
+.password-requirements li.valid {
+    color: #4CAF50;
+}
+
+.password-requirements li.valid::before {
+    content: "✓ ";
+}
+
+.validation-message {
+    font-size: 0.8em;
+    margin-top: -8px;
+}
+
+.validation-message.error {
+    color: #ff0000;
+}
+
+.validation-message.success {
+    color: #4CAF50;
+}
+
+.password-input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-input-container input {
+    flex: 1;
+    padding-right: 40px; /* 為按鈕留出空間 */
+}
+
+.show-password-btn {
+    position: absolute;
+    right: 5px;
+    background: none !important;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    color: #666;
+    font-size: 1.2em;
+}
+
+.show-password-btn:hover {
+    background: none !important;
+    color: #333;
+}
+
+/* Ensure the password input box and other input boxes are the same width */
+.password-input-container {
+    width: 100%;
 } 
