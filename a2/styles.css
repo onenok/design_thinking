@@ -111,6 +111,8 @@ footer {
     gap: 10px;
     max-width: 300px;
     margin: 0 auto;
+    position: relative;
+    padding-bottom: 50px;
 }
 
 #login-form input, #register-form input {
@@ -200,4 +202,17 @@ footer {
 /* Ensure the password input box and other input boxes are the same width */
 .password-input-container {
     width: 100%;
+}
+
+#guest-login {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #808080 !important;
+    padding: 8px 15px;
+    font-size: 0.9em;
+}
+
+#guest-login:hover {
+    background-color: #666666;
 } 

@@ -167,9 +167,9 @@ function togglePasswordVisibility(inputId, button) {
     const input = document.getElementById(inputId);
     if (input.type === 'password') {
         input.type = 'text';
-        button.textContent = '🔒'; // Toggle icon
+        button.textContent = '👁️'; 
     } else {
         input.type = 'password';
-        button.textContent = '👁️'; // Toggle back to original icon
+        button.textContent = '🔒'; 
     }
 } 
